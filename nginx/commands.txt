@@ -58,3 +58,5 @@ kubectl delete secret idlocal-tls
 kubectl create secret tls idlocal-tls --key="k8s/id-local.key" --cert="k8s/id-local.crt"
 
 kubectl delete service globomail-service
+
+kubectl scale deployment globomantics-identity --replicas=2
